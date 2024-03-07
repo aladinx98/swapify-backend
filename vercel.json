@@ -1,0 +1,11 @@
+{
+    "headers": [
+      {
+        "source": "/index/(.*)",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" }
+        ]
+      }
+    ]
+  }
+  
