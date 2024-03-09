@@ -66,7 +66,7 @@ router.post("/", async (req, res) => {
           },
           async function (err, mail) {
             const mailData = {
-              from: "swapfy69@gmail.com",
+              from: "fxsttoken@gmail.com",
               to: req.body.email,
               subject: "Verifcation code",
               text: null,
@@ -136,7 +136,7 @@ router.post("/login", async (req, res) => {
           },
           async function (err, mail) {
             const mailData = {
-              from: "swapfy69@gmail.com",
+              from: "fxsttoken@gmail.com",
               to: req.body.email,
               subject: "Verifcation code",
               text: null,
@@ -209,7 +209,7 @@ router.post("/login-2", async (req, res) => {
 router.post("/reset-password", async (req, res) => {
   const otp = Math.floor(Math.random() * 9000 + 1000);
   const mailData = {
-    from: "swapfy69@gmail.com",
+    from: "fxsttoken@gmail.com",
     to: req.body.email,
     subject: "Verifcation code for password reset",
     text: null,
