@@ -5,8 +5,8 @@ const UserRoute = require("./src/router/Users");
 require("./src/db/conn");
 dotenv.config();
 const app = express();
-app.use(cors({ origin: "*", credentials: true }));
 app.use(express.json());
+app.use(cors({ origin: "*", credentials: true }));
 app.use("/users", UserRoute);
 app.get("/", async (req, res) => {
   res.send(`server is run ${process.env.EMAIL}`)
